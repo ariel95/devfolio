@@ -34,15 +34,15 @@ const Header = (props) => {
                             <div id="actions" className="navbar-collapse collapse justify-content-end">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link js-scroll active" href="#">Home</a>
+                                        <a className="home nav-link js-scroll active" href="#">Home</a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="about nav-item">
                                         <a className="nav-link js-scroll" href="#about">About</a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="work nav-item">
                                         <a className="nav-link js-scroll" href="#work">Work</a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="contact nav-item">
                                         <a className="nav-link js-scroll" href="#contact">Contact</a>
                                     </li>
                                 </ul>

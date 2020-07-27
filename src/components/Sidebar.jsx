@@ -17,9 +17,9 @@ const Sidebar = (props) => {
             </div>
             <div className="list-group list-group-flush">
                 <a href="#" className="list-group-item list-group-item-action bg-light">Inicio</a>
-                <a href="#services" className="list-group-item list-group-item-action bg-light">Servicios</a>
-                <a href="#about-us" className="list-group-item list-group-item-action bg-light">Sobre nosotros</a>
-                <a href="#contact" className="list-group-item list-group-item-action bg-light">Contactenos</a>
+                <a href="#about" className="list-group-item list-group-item-action bg-light">About</a>
+                <a href="#work" className="list-group-item list-group-item-action bg-light">Work</a>
+                <a href="#contact" className="list-group-item list-group-item-action bg-light">Contact</a>
             </div>
         </div>
     )

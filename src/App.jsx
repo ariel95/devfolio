@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import Sidebar from './components/Sidebar';
 import AboutMe from './components/AboutMe';
 import Work from './components/Work';
+import Contact from './components/Contact';
 
 function useWindowSize() {
   const [size, setSize] = useState(0);
@@ -31,6 +32,7 @@ function App() {
       <section id="content" onClick={() => setIsMenuActive(false)}>
         <AboutMe />
         <Work />
+        <Contact />
       </section>
 
     </div>

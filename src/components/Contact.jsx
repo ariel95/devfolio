@@ -1,10 +1,11 @@
 import React from 'react'
+import '../public/css/contact.css'
 
 const Contact = () => {
     return (
-        <div>
+        <section id="contact">
             Contact
-        </div>
+        </section>
     )
 }
 

@@ -10,9 +10,34 @@
 }
 #header a, #header button{
     color:white;
+    
 }
-
 
 #header.solid{
     background-color: #1b1b1b;
+}
+
+#header .container > a{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#header #actions a {
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+#header #actions a:hover {
+    /* text-decoration: underline; */
+    background-size: 100% 4px;
+}
+#header #actions a.active {
+    background-size: 100% 4px;
 }
