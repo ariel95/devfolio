@@ -1,15 +1,84 @@
 #banner {
     height: 100vh;
     position: relative;
+    text-align: center;
     color: #fff;
 }
 #banner.image{
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center center;
 }
 #banner.image.mobile {
     background-attachment: scroll;
+}
+
+
+
+#banner .overlay-itro {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+}
+
+#banner .content {
+    text-align: center;
+    position: absolute;
+}
+
+#banner .display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#banner .table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#banner .title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+#banner .subtitle{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+#banner .content {
+    text-align: center;
+    position: absolute;
+}
+
+#banner .content {
+    text-align: center;
+    position: absolute;
+}
+
+@media (max-width: 768px){
+    #banner .title {
+        font-size: 3.5rem;
+    }
+    #banner .subtitle{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px){
+    #banner .title {
+        font-size: 1.7rem;
+    }
+    #banner .subtitle{
+        font-size: 1.2rem;
+    }
 }

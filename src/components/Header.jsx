@@ -15,17 +15,19 @@ const Header = (props) => {
     const [isContactActive, setIsContactActive] = React.useState(false);
     
     const handleAnimation = () => {
+        const header = document.getElementById('header')
         const scrollTop = document.documentElement.scrollTop;
-        if (scrollTop > 80) {
-            setIsSolid(true)
-        }
-        else{
-            setIsSolid(false)
-        }
+        headerSolid(scrollTop);
         homeActive(scrollTop);
         aboutActive(scrollTop);
         workActive(scrollTop);
         contactActive(scrollTop);
+    }
+    const headerSolid = (scrollTop) => {
+        if (scrollTop > 80) 
+            setIsSolid(true)
+        else
+            setIsSolid(false)
     }
 
     const homeActive = (scrollTop) => {
