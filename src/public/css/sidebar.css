@@ -1,0 +1,41 @@
+#sidebar-wrapper {
+  /* margin-left: -15rem; */
+  -webkit-transition: right .25s ease-out;
+  -moz-transition: right .25s ease-out;
+  -o-transition: right .25s ease-out;
+  transition: right .25s ease-out;
+  position: fixed;
+    z-index: 1000000;
+    height: 100vh;
+    right: 0;
+    /* top: var(--header-height); */
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#sidebar-wrapper {
+  right: -250px;
+}
+
+#sidebar-wrapper.active {
+  right: 0;
+}
+
+#sidebar-wrapper > div > a{
+  text-decoration: none;
+}
+
+#sidebar-wrapper .btn-icon{
+  float: right;
+}

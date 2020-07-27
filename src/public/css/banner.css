@@ -1,0 +1,15 @@
+#banner {
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+#banner.image{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+#banner.image.mobile {
+    background-attachment: scroll;
+}

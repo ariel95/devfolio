@@ -1,0 +1,18 @@
+.App.mobile #header {
+    height: auto;
+}
+
+#header {
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    height: var(--header-height);
+    
+}
+#header a, #header button{
+    color:white;
+}
+
+
+#header.solid{
+    background-color: #1b1b1b;
+}
