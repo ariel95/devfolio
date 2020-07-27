@@ -64,16 +64,16 @@ const Header = (props) => {
                             <div id="actions" className="navbar-collapse collapse justify-content-end">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className={isHomeActive?"home nav-link js-scroll active":"home nav-link js-scroll"} href="#">Home</a>
+                                        <a className={isHomeActive?"home nav-link js-scroll active":"home nav-link js-scroll"} href="#"><span>Home</span></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={isAboutActive?"about nav-link js-scroll active":"about nav-link js-scroll"} href="#about">About</a>
+                                        <a className={isAboutActive?"about nav-link js-scroll active":"about nav-link js-scroll"} href="#about"><span>About</span></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={isWorkActive?"work nav-link js-scroll active":"work nav-link js-scroll"} href="#work">Work</a>
+                                        <a className={isWorkActive?"work nav-link js-scroll active":"work nav-link js-scroll"} href="#work"><span>Work</span></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className={isContactActive?"contact nav-link js-scroll active":"contact nav-link js-scroll"} href="#contact">Contact</a>
+                                        <a className={isContactActive?"contact nav-link js-scroll active":"contact nav-link js-scroll"} href="#contact"><span>Contact</span></a>
                                     </li>
                                 </ul>
                             </div>

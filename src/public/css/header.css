@@ -22,7 +22,7 @@
     font-size: 22px;
 }
 
-#header #actions a {
+#header #actions a span {
     transition: all 0.5s ease-in-out;
     text-transform: uppercase;
     font-weight: 600;
@@ -32,9 +32,10 @@
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
+    padding-bottom: 8px;
 }
 
-#header #actions a:hover {
+#header #actions a span:hover {
     /* text-decoration: underline; */
     background-size: 100% 4px;
 }
