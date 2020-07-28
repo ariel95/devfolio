@@ -32,7 +32,7 @@ const AboutMe = () => {
                             principal de programación. En la parte de Front-End he trajado con HTML,
                             Razor, CSS, Javascript, JQuery y Bootstrap. SQL Server para Base de datos.
                             Actualmente estoy desarrollando aplicaciones web (tanto proyectos
-                            personales como proyectos a clientes) utilizando React JS para el Front-End
+                            personales como proyectos a clientes) utilizando React JS + Redux Ducks para el Front-End
                             y las funcionalidades de Firebase para el "Back-End" y el respaldo de datos.
                             También estoy en proceso de aprendizaje tanto de Node JS como Net Core API REST
                             para el Back-End de mis nuevas aplicaciones.

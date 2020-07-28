@@ -3,7 +3,8 @@
   --main-color-hover: red;
   --secondary-color: blue;
   --secondary-color-hover: blue;
-  --header-height: 80px
+  --header-height: 80px;
+  --text-color-banner: #e8e8e8;
 }
 
 *{
@@ -25,6 +26,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #e8e8e8;
 }
 
 .App {

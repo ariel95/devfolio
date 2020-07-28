@@ -2,7 +2,7 @@
     height: 100vh;
     position: relative;
     text-align: center;
-    color: #fff;
+    color: var(--text-color-banner);
 }
 #banner.image{
     background-image: url(../img/banner.jpg);
@@ -45,7 +45,7 @@
 }
 
 #banner .title {
-    color: #fff;
+    color: var(--text-color-banner);
     font-weight: 600;
     font-size: 3.5rem;
 }

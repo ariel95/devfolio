@@ -58,7 +58,7 @@ const Header = (props) => {
     }
 
     React.useEffect(() => {
-        home = document.getElementById('banner').offsetHeight - 200;
+        home = document.getElementById('banner').offsetHeight - 300;
         about = document.getElementById('about-content').offsetHeight;
         work = document.getElementById('work-content').offsetHeight;
         contact = document.getElementById('contact-content').offsetHeight;

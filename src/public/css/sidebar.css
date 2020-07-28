@@ -35,7 +35,7 @@
 #sidebar-wrapper > div > a{
   text-decoration: none;
   background-color: #1b1b1b !important;
-  color: white;
+  color: var(--text-color-banner);
   border-bottom: none;
   border-top: 1px solid #2b2b2b;
 
@@ -43,11 +43,11 @@
 
 #sidebar-wrapper .btn-icon{
   float: right;
-  color:white;
+  color:var(--text-color-banner);
 }
 
 #sidebar-wrapper {
   background-color: #1b1b1b !important;
-  color: white;
+  color: var(--text-color-banner);
 }
 
