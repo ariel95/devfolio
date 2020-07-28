@@ -3,8 +3,11 @@ import '../public/css/work.css'
 
 const Work = () => {
     return (
-        <section id="work">
-            WORK
+        <section id="work-content">
+            <span id="work" class="position"></span>
+            <div className="title-section">
+                <h3>Work</h3>
+            </div>
         </section>
     )
 }
