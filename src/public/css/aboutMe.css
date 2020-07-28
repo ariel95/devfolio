@@ -1,8 +1,6 @@
-#about-content {
-    /* height: 100vh; */
-    /* padding: 15px; */
-    /* margin-top: 25px; */
-}
+/* #about-content {
+ 
+} */
 
 #about-content .content{
     text-align: center;
@@ -10,7 +8,7 @@
 
 #about-content .profile-picture{
     border: 2px solid #1b1b1b;
-    background-image: url(/static/media/profile-picture.74ee3f4f.jpg);
+    background-image: url(../img/profile-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
