@@ -1,6 +1,12 @@
+### Personal web site made with react
+I'm using the first mobile design
+
+### Sizes CSS
+@media (max-width: 768px)
+@media (max-width: 450px)
+
 ### Thanks for the images to
 https://www.pexels.com/es-es/@bongkarn-thanyakij-683719
-
 
 ### How to use font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

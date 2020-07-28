@@ -39,6 +39,6 @@
     /* text-decoration: underline; */
     background-size: 100% 4px;
 }
-#header #actions a.active {
+#header #actions a.active span{
     background-size: 100% 4px;
 }

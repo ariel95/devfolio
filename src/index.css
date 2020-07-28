@@ -6,6 +6,10 @@
   --header-height: 80px
 }
 
+*{
+  font-family: cursive;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -23,9 +27,9 @@ body {
   overflow-x: hidden;
 }
 
-#content{
+/* #content{
   margin-top: var(--header-height);
-}
+} */
 
 button.btn-noborders{
   border: none;
@@ -40,4 +44,15 @@ button.btn-icon{
   box-shadow: none;
   outline: none;
   background: transparent;
+}
+
+.title-section{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem; 
+}
+
+.content-section {
+  padding-left: 15px;
+  padding-right: 15px;
 }

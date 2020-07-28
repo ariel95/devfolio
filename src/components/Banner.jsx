@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="content display-table">
                 <div className="table-cell">
                     <div className="container">
-                        <h1 className="title mb-4">I am Ariel Bernardo Vergara</h1>
+                        <h1 className="title mb-4">Ariel Bernardo Vergara</h1>
                         <p className="subtitle">Full Stack Developer</p>
                     </div>
                 </div>

@@ -54,7 +54,7 @@ const Header = (props) => {
     return (
         <nav id="header" className={isSolid ? "navbar navbar-expand-md fixed-top solid":"navbar navbar-expand-md fixed-top"} >
             <div className={isMobile ? "container-fluid":"container"}>
-                <a className="navbar-brand js-scroll" href="#">Ariel Vergara</a>
+                <a className="navbar-brand js-scroll" href="#">Devfolio</a>
                 {
                     isMobile ? (
                         <button className="btn-icon" type="button" onClick={() => setIsMenuActive(!isMenuActive)}>
@@ -79,8 +79,6 @@ const Header = (props) => {
                             </div>
                         )
                 }
-
-
             </div>
         </nav>
     )
