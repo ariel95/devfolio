@@ -14,8 +14,12 @@ const Header = (props) => {
     const [isWorkActive, setIsWorkActive] = React.useState(false);
     const [isContactActive, setIsContactActive] = React.useState(false);
     
+    let home = 0;
+    let about = 0;
+    let work = 0;
+    let contact = 0;
+
     const handleAnimation = () => {
-        const header = document.getElementById('header')
         const scrollTop = document.documentElement.scrollTop;
         headerSolid(scrollTop);
         homeActive(scrollTop);
@@ -24,30 +28,40 @@ const Header = (props) => {
         contactActive(scrollTop);
     }
     const headerSolid = (scrollTop) => {
-        if (scrollTop > 80) 
-            setIsSolid(true)
-        else
-            setIsSolid(false)
+        if (scrollTop > 80) setIsSolid(true)
+        else setIsSolid(false)
     }
 
     const homeActive = (scrollTop) => {
-        if(scrollTop >= 0 && scrollTop <= 600) setIsHomeActive(true);
+        const from = 0;
+        const to = home;
+        if(scrollTop >= from && scrollTop <= to) setIsHomeActive(true);
         else setIsHomeActive(false);
     }
     const aboutActive = (scrollTop) => {
-        if(scrollTop > 600 && scrollTop <= 1200) setIsAboutActive(true);
+        const from = home;
+        const to = home + about;
+        if(scrollTop > from && scrollTop <= to) setIsAboutActive(true);
         else setIsAboutActive(false);
     }
     const workActive = (scrollTop) => {
-        if(scrollTop > 1200 && scrollTop <= 1800) setIsWorkActive(true);
+        const from = home + about;
+        const to = home + about + work;
+        if(scrollTop > from && scrollTop <= to) setIsWorkActive(true);
         else setIsWorkActive(false);
     }
     const contactActive = (scrollTop) => {
-        if(scrollTop > 1800 && scrollTop <= 2400) setIsContactActive(true);
+        const from = home + about + work;
+        const to = home + about + work + contact;
+        if(scrollTop > from && scrollTop <= to) setIsContactActive(true);
         else setIsContactActive(false);
     }
 
     React.useEffect(() => {
+        home = document.getElementById('banner').offsetHeight;
+        about = document.getElementById('about').offsetHeight;
+        work = document.getElementById('work').offsetHeight;
+        contact = document.getElementById('contact').offsetHeight;
         window.onscroll = () => handleAnimation();  
     },[])
 
@@ -61,23 +75,23 @@ const Header = (props) => {
                             <FontAwesomeIcon icon={faBars} />
                         </button>
                     ) : (
-                            <div id="actions" className="navbar-collapse collapse justify-content-end">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item">
-                                        <a className={isHomeActive?"home nav-link js-scroll active":"home nav-link js-scroll"} href="#"><span>Home</span></a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className={isAboutActive?"about nav-link js-scroll active":"about nav-link js-scroll"} href="#about"><span>About</span></a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className={isWorkActive?"work nav-link js-scroll active":"work nav-link js-scroll"} href="#work"><span>Work</span></a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className={isContactActive?"contact nav-link js-scroll active":"contact nav-link js-scroll"} href="#contact"><span>Contact</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        )
+                        <div id="actions" className="navbar-collapse collapse justify-content-end">
+                            <ul className="navbar-nav">
+                                <li className="nav-item">
+                                    <a className={isHomeActive?"home nav-link js-scroll active":"home nav-link js-scroll"} href="#"><span>Home</span></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className={isAboutActive?"about nav-link js-scroll active":"about nav-link js-scroll"} href="#about"><span>About</span></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className={isWorkActive?"work nav-link js-scroll active":"work nav-link js-scroll"} href="#work"><span>Work</span></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className={isContactActive?"contact nav-link js-scroll active":"contact nav-link js-scroll"} href="#contact"><span>Contact</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    )
                 }
             </div>
         </nav>

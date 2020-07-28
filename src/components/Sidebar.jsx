@@ -8,7 +8,7 @@ const Sidebar = (props) => {
     const { setIsMenuActive, isMenuActive } = props
 
     return (
-        <div id="sidebar-wrapper" className={isMenuActive ? "bg-light border-right active" : "bg-light border-right"} onClick={() => setIsMenuActive(false)}>
+        <div id="sidebar-wrapper" className={isMenuActive ? "bg-dark border-right active" : "bg-dark border-right"} onClick={() => setIsMenuActive(false)}>
             <div className="sidebar-heading">
                 <span>Menu</span>
                 <button className="btn-icon" type="button" onClick={() => setIsMenuActive(!isMenuActive)}>
