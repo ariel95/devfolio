@@ -62,6 +62,8 @@ button.btn-icon{
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 2rem; 
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .content-section {

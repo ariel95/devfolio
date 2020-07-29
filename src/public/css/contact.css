@@ -1,6 +1,7 @@
 #contact-content{
     background-color: #1b1b1b;
     color: var(--text-color-banner);
+    margin-top: 100px;
 }
 
 #contact-content input[type="text"]{

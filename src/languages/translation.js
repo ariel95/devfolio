@@ -17,8 +17,10 @@ export default {
             tecnologiesExperienceDescription: "During my work experience, I've been using C# as the main programming language. On the Front End part I have brought with HTML, Razor, CSS, Javascript, JQuery and Bootstrap. SQL Server for Database. I am currently developing web applications (both personal projects and projects to customers) using React JS + Redux Ducks for the Front End and Firebase capabilities for back end and data backup. I'm also learning both Node JS and Net Core REST APIs for the Back End of my new apps." ,
         },
         work: {
-            work: "Work"
-
+            work: "Work",
+            plumberDescription: 'Description: Website for a plumbing and general services company. Features: Responsive application, pointing to Desktop.  Status: 80% to finish it. With possible changes in the future.',
+            recipiesDescription: 'Personal web application. You can share and save meal recipes!  Features: Responsive app, targeting Mobile.  Status: 60% to finish it but with stable functionalities.',
+            visit: 'Visit web site',
         },
         contact:{
             contact: "Contact",
@@ -51,7 +53,10 @@ export default {
             tecnologiesExperienceDescription: 'Durante mi experiencia laboral, he estado utilizando C# como lenguaje principal de programación. En la parte de Front-End he trajado con HTML, Razor, CSS, Javascript, JQuery y Bootstrap. SQL Server para Base de datos. Actualmente estoy desarrollando aplicaciones web (tanto proyectos personales como proyectos a clientes) utilizando React JS + Redux Ducks para el Front-End y las funcionalidades de Firebase para el "Back-End" y el respaldo de datos. También estoy en proceso de aprendizaje tanto de Node JS como Net Core API REST para el Back-End de mis nuevas aplicaciones.' ,
         },
         work: {
-            work: "Proyectos"
+            work: "Proyectos",
+            plumberDescription: 'Descripción: Sitio web para una empresa de plomerias y servicios generales.  Caracteristicas: Aplicación responsive, apuntando a Desktop.  Estado: 80% para finalizarlo. Con posibles cambios a futuro.',
+            recipiesDescription: 'Aplicación web personal. Podrás compartir y guardar recetas de comidas! Caracteristicas: Aplicación responsive, apuntando a Mobile. Estado: 60% para finalizarlo pero con funcionalidades estables.',
+            visit: 'Visitar sitio web',
         },
         contact:{
             contact: "Contacto",

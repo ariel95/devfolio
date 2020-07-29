@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 import AboutMe from './components/AboutMe';
 import Work from './components/Work';
 import Contact from './components/Contact';
-import LanguageProvider, { LanguageContext } from './languages/LanguageContext';
+import LanguageProvider from './languages/LanguageContext';
 
 function useWindowSize() {
   const [size, setSize] = useState(0);
@@ -24,10 +24,6 @@ function App() {
 
   const isMobile = useWindowSize();
   const [isMenuActive, setIsMenuActive] = React.useState(false);
-
-  const changeLanguage = (language, data) => () => {
-    data.changeLanguage(language);
-  }
 
 
   return (
