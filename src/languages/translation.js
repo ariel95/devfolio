@@ -12,7 +12,7 @@ export default {
         },
         about: {
             about: 'About me',
-            aboutDescription: "I'm a FullStack .NET Developer since December 2017 and a student of Systems Engineering at utN (FRBA), currently taking subjects in 3rd and 4th year. I consider myself a proactive and curious person. I like teamwork.",
+            aboutDescription: "I'm a FullStack .NET Developer since December 2017 and a student of Systems Engineering at UTN (FRBA), currently taking subjects in 3rd and 4th year. I consider myself a proactive and curious person. I like teamwork.",
             tecnologiesExperience: 'Tecnologies experience',
             tecnologiesExperienceDescription: "During my work experience, I've been using C# as the main programming language. On the Front End part I have brought with HTML, Razor, CSS, Javascript, JQuery and Bootstrap. SQL Server for Database. I am currently developing web applications (both personal projects and projects to customers) using React JS + Redux Ducks for the Front End and Firebase capabilities for back end and data backup. I'm also learning both Node JS and Net Core REST APIs for the Back End of my new apps." ,
         },

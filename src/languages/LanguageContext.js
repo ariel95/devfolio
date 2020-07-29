@@ -5,8 +5,9 @@ export const LanguageContext = React.createContext();
 
 const LanguageProvider = (props) => {
 
-    const [language, setLanguage] = React.useState("english");
-    const [transl, setTranslations] = React.useState(translations.english);
+    const l = localStorage.getItem('language');
+    const [language, setLanguage] = React.useState(l ? l : "english");
+    const [transl, setTranslations] = React.useState(translations[language]);
 
     const changeLanguage = (language) => {
         setLanguage(language);

@@ -3,23 +3,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 import spanish from '../public/icons/spanish.ico'
 import english from '../public/icons/english.ico'
+import { LanguageContext } from '../languages/LanguageContext'
 
 const Languages = () => {
 
-    const language = localStorage.getItem('language');
+    const { changeLanguage, language } = React.useContext(LanguageContext)
 
     const spanishClick = () => {
         localStorage.setItem('language', 'spanish'); 
-        window.location.reload();   
+        changeLanguage('spanish');
+        // window.location.reload();   
     }
     const englishClick = () => {
         localStorage.setItem('language', 'english');
-        window.location.reload();
+        changeLanguage('english');
+        // window.location.reload();
     }
 
     return (
         <div id="languages" className="btn-group dropleft">
-            <button className="btn-actions" data-toggle="dropdown" style={{marginBottom:"5px"}}>
+            <button className="btn-languages" data-toggle="dropdown" style={{marginBottom:"5px"}}>
                 {/* <FontAwesomeIcon icon={faEllipsisV} /> */}
                 <FontAwesomeIcon icon={faSortDown} style={{marginRight:"10px", marginBottom:"1px"}}/>
                 {

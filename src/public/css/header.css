@@ -42,3 +42,26 @@
 #header #actions a.active span{
     background-size: 100% 4px;
 }
+
+#languages .btn-languages{
+    color: var(--text-color-banner);
+    outline: none!important;
+    box-shadow: none!important;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+#languages img {
+    width: 25px;
+}
+
+#languages .dropdown-menu span {
+    color: #1b1b1b;
+    font-weight: bold;
+}
+
+.App.mobile #languages {
+    position: absolute;
+    right: 55px;
+}
