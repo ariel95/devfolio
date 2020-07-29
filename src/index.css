@@ -7,12 +7,17 @@
   --text-color-banner: #e8e8e8;
 }
 
-*{
+.App{
   font-family: cursive;
+}
+.App.mobile{
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
 }
 
 span.text{
-  font-family: Georgia, serif;
+  /* font-family: Georgia, serif; */
   font-size: 1.1rem;
 }
 

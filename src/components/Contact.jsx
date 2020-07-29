@@ -7,7 +7,7 @@ const Contact = () => {
     return (
 
         <section id="contact-content">
-            <span id="contact" class="position"></span>
+            <span id="contact" className="position"></span>
 
             <footer id="footer">
                 <div className="inner">
