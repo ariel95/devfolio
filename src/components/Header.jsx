@@ -20,7 +20,17 @@ const Header = (props) => {
     let contact = 0;
 
     const handleAnimation = () => {
+        home = document.getElementById('banner').offsetHeight - 300;
+        about = document.getElementById('about-content').offsetHeight;
+        work = document.getElementById('work-content').offsetHeight;
+        contact = document.getElementById('contact-content').offsetHeight;
         const scrollTop = document.documentElement.scrollTop;
+        
+        // console.log("home ",home);
+        // console.log("about: ", about);
+        // console.log("work: ",work);
+        // console.log("contact: ", contact);
+        // console.log("scroll: ", scrollTop)
         headerSolid(scrollTop);
         homeActive(scrollTop);
         aboutActive(scrollTop);
@@ -58,10 +68,6 @@ const Header = (props) => {
     }
 
     React.useEffect(() => {
-        home = document.getElementById('banner').offsetHeight - 300;
-        about = document.getElementById('about-content').offsetHeight;
-        work = document.getElementById('work-content').offsetHeight;
-        contact = document.getElementById('contact-content').offsetHeight;
         window.onscroll = () => handleAnimation();  
     },[])
 
