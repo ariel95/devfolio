@@ -1,3 +1,61 @@
 #contact-content{
-    height: 100vh;
+    background-color: #1b1b1b;
+    color: var(--text-color-banner);
 }
+
+#contact-content input[type="text"]{
+    height: 30px;
+}
+
+#contact-content button {
+    float: right;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 40px;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.25);
+    background: transparent;
+}
+
+#contact-content button:hover{
+    color: white !important;
+    background: #222222;
+    box-shadow: none;
+}
+
+#social-networks img{
+    width: 30px;
+}
+
+#social-networks span {
+    top: 3px;
+    position: relative;
+    left: 13px;
+    color: var(--text-color-banner);
+    font-size: 18px;
+}
+
+#social-networks a {
+    text-decoration-color: var(--text-color-banner);
+}
+
+#contact-content .copyright{
+    text-align: center;
+    padding: 50px;
+}
+
+#social-networks .items{
+    list-style: none;
+    padding: 0;
+    margin-top: 22px;
+}
+#social-networks .items li {
+    height: 60px;
+}
+
+#contact-form form{
+    margin-top: 25px;
+}
+/* #contact-form form .form-group{
+
+    } */
