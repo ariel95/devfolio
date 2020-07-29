@@ -2,6 +2,7 @@ import React from 'react'
 import '../public/css/contact.css'
 import ContactForm from './ContactForm'
 import SocialNetworks from './SocialNetworks'
+import Text from './Text'
 
 const Contact = () => {
     return (
@@ -12,9 +13,9 @@ const Contact = () => {
             <footer id="footer">
                 <div className="inner">
                     <div className="title-section">
-                        <h3>Contact</h3>
+                        <h3><Text text="contact" section="contact"/></h3>
                         <span className="text">
-                            Realice las consultas que crea necesarias. ¡Estamos a su disposición!
+                            <Text text="contactSubtitle" section="contact"/>
                         </span>
                     </div>
 

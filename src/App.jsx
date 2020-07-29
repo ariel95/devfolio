@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar';
 import AboutMe from './components/AboutMe';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import LanguageProvider, { LanguageContext } from './languages/LanguageContext';
 
 function useWindowSize() {
   const [size, setSize] = useState(0);
@@ -24,18 +25,33 @@ function App() {
   const isMobile = useWindowSize();
   const [isMenuActive, setIsMenuActive] = React.useState(false);
 
-  return (
-    <div className={isMobile ? "App mobile":"App"}>
-      <Header isMobile={isMobile} isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
-      <Sidebar isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
-      <Banner  onClick={() => setIsMenuActive(false)}/>
-      <section id="content" onClick={() => setIsMenuActive(false)}>
-        <AboutMe />
-        <Work />
-        <Contact />
-      </section>
+  const changeLanguage = (language, data) => () => {
+    data.changeLanguage(language);
+  }
 
-    </div>
+
+  return (
+    <LanguageProvider>
+      <div className={isMobile ? "App mobile" : "App"}>
+        <Header isMobile={isMobile} isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
+        <Sidebar isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
+        <Banner onClick={() => setIsMenuActive(false)} />
+        <section id="content" onClick={() => setIsMenuActive(false)}>
+          <AboutMe />
+          <Work />
+          <Contact />
+        </section>
+        {/* <LanguageContext.Consumer>
+            {(data) => {
+              return (
+                <button
+                  onClick={changeLanguage('spanish', data)}
+                >Change to Spanish</button>
+              );
+            }}
+          </LanguageContext.Consumer> */}
+      </div>
+    </LanguageProvider>
   );
 }
 

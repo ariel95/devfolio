@@ -2,6 +2,8 @@ import React from 'react'
 import '../public/css/header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Text from './Text'
+import Languages from './Languages'
 
 const Header = (props) => {
 
@@ -81,20 +83,25 @@ const Header = (props) => {
                             <FontAwesomeIcon icon={faBars} />
                         </button>
                     ) : (
+                        
                         <div id="actions" className="navbar-collapse collapse justify-content-end">
+                            
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className={isHomeActive?"home nav-link js-scroll active":"home nav-link js-scroll"} href="#"><span>Home</span></a>
+                                    <a className={isHomeActive?"home nav-link js-scroll active":"home nav-link js-scroll"} href="#"><span><Text text="home" section="common"/></span></a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className={isAboutActive?"about nav-link js-scroll active":"about nav-link js-scroll"} href="#about"><span>About</span></a>
+                                    <a className={isAboutActive?"about nav-link js-scroll active":"about nav-link js-scroll"} href="#about"><span><Text text="about" section="common"/></span></a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className={isWorkActive?"work nav-link js-scroll active":"work nav-link js-scroll"} href="#work"><span>Work</span></a>
+                                    <a className={isWorkActive?"work nav-link js-scroll active":"work nav-link js-scroll"} href="#work"><span><Text text="work" section="common"/></span></a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className={isContactActive?"contact nav-link js-scroll active":"contact nav-link js-scroll"} href="#contact"><span>Contact</span></a>
+                                    <a className={isContactActive?"contact nav-link js-scroll active":"contact nav-link js-scroll"} href="#contact"><span><Text text="contact" section="common"/></span></a>
                                 </li>
+                                {/* <li className="nav-item">
+                                    <Languages />
+                                </li> */}
                             </ul>
                         </div>
                     )

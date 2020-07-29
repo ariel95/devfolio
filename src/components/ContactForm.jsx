@@ -1,9 +1,13 @@
 import React from 'react'
 import '../public/css/contact.css'
+import Text from './Text'
+import { LanguageContext } from '../languages/LanguageContext'
+
 const ContactForm = (props) => {
 
     const [status, setStatus] = React.useState("");
 
+    const { transl } = React.useContext(LanguageContext)
 
     function submitForm(ev) {
         ev.preventDefault();
@@ -26,7 +30,7 @@ const ContactForm = (props) => {
 
     return (
         <section id="contact-form">
-            <h5>Escribanos</h5>
+            <h5><Text text="writeMe" section="contact"/></h5>
             <form
                 onSubmit={submitForm}
                 action="https://formspree.io/xrgyryda"
@@ -34,15 +38,15 @@ const ContactForm = (props) => {
             >
                 <div className="form-group">
                     {/* <label htmlFor="form-name">Nombre</label> */}
-                    <input placeholder="Nombre" type="text" name="name" className="form-control" id="form-name" />
+                    <input placeholder={transl["contact"]["name"]} type="text" name="name" className="form-control" id="form-name" />
                 </div>
                 <div className="form-group">
                     {/* <label placeholder="Nombre"  htmlFor="form-email">Email</label> */}
-                    <input placeholder="Email"  type="text" name="email" className="form-control" id="form-email" aria-describedby="emailHelp" />
+                    <input placeholder={transl["contact"]["email"]}  type="text" name="email" className="form-control" id="form-email" aria-describedby="emailHelp" />
                 </div>
                 <div className="form-group">
                     {/* <label htmlFor="form-message">Mensaje</label> */}
-                    <textarea type="text" name="message" className="form-control" id="form-message" placeholder="Ingrese su mensaje aquí">
+                    <textarea type="text" name="message" className="form-control" id="form-message" placeholder={transl["contact"]["message"]}>
 
                     </textarea>
                 </div>
@@ -55,14 +59,13 @@ const ContactForm = (props) => {
                     </button>
                 ) : (
                         <button type="submit" className="btn btn-primary" onClick={() => setStatus("LOADING")}>
-                            <span>Enviar</span>
+                            <span><Text text="send" section="contact"/></span>
                         </button>
                     )
                 }
-                {status === "SUCCESS" && <p>¡Gracias por enviarnos su mensaje!</p>}
-                {status === "ERROR" && <p>Ooops! Hubo un error para enviar su mensaje.</p>}
-
-            </form>
+                {status === "SUCCESS" && <p><Text text="success" section="contact"/></p>}
+                {status === "ERROR" && <p><Text text="error" section="contact"/></p>}
+                </form>
         </section>
     )
 }

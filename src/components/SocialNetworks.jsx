@@ -3,10 +3,11 @@ import whatsapp from '../public/img/whatsapp-circle.png'
 import mail from '../public/img/gmail-circle.png'
 import instagram from '../public/img/instagram-circle.png'
 import linkedin from '../public/img/linkedin-circle.png'
+import Text from './Text'
 const SocialNetworks = () => {
     return (
         <section id="social-networks">
-            <h5>Nuestras redes sociales</h5>
+            <h5><Text text="mySocialNetworks" section="contact"/></h5>
             <ul className="items">
                 <li><a id="mail" href="mailto: arielbvergara@gmail.com"><img src={mail} alt="" /><span>Email: arielbvergara@gmail.com</span></a></li>
                 <li><a href="https://www.instagram.com/arielvergara_/?hl=es-la"><img src={instagram} alt="" /><span>Instagram: arielvergara_</span></a></li>
