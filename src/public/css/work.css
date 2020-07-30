@@ -3,6 +3,7 @@
 #work-content .card {
     margin-bottom: 25px;
     box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    height: 100%;
     
 }
 #work-content .card img{
@@ -13,4 +14,7 @@
     border: none;
     border-radius: 0;
     background: #1b1b1b;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }

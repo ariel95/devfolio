@@ -12,14 +12,14 @@ export default {
         },
         about: {
             about: 'About me',
-            aboutDescription: "I'm a FullStack .NET Developer since December 2017 and a student of Systems Engineering at UTN (FRBA), currently taking subjects in 3rd and 4th year. I consider myself a proactive and curious person. I like teamwork.",
+            aboutDescription: "I’ve been working as a Full Stack Developer since December 2017 and I’m studying System Engineering in the UTN (FRBA - Argentina). Currently I’m doing subjects from 3rd and 4th year. I see myself a proactive and curious person. I like team work.",
             tecnologiesExperience: 'Tecnologies experience',
-            tecnologiesExperienceDescription: "During my work experience, I've been using C# as the main programming language. On the Front End part I have brought with HTML, Razor, CSS, Javascript, JQuery and Bootstrap. SQL Server for Database. I am currently developing web applications (both personal projects and projects to customers) using React JS + Redux Ducks for the Front End and Firebase capabilities for back end and data backup. I'm also learning both Node JS and Net Core REST APIs for the Back End of my new apps." ,
+            tecnologiesExperienceDescription: "Working, I’ve been using C# as the main programming language. In Front-End I’ve worked with HTML, Razor, CSS, JavaScript, JQuery and Bootstrap. For databases I’ve used SQL Server. Currently I’m developing web apps (Personal projects and Customers’ projects) using React JS + Redux Ducks in the Front-End and the Firebase’s services. Also I’m going to learn Node JS and Net Core API REST for the Back-End in my next apps." ,
         },
         work: {
             work: "Work",
-            plumberDescription: 'Description: Website for a plumbing and general services company. Features: Responsive application, pointing to Desktop.  Status: 80% to finish it. With possible changes in the future.',
-            recipiesDescription: 'Personal web application. You can share and save meal recipes!  Features: Responsive app, targeting Mobile.  Status: 60% to finish it but with stable functionalities.',
+            plumberDescription: 'Description: Web site made for a plumbing and general services company. Features: Responsive web app - desktop first. State: 80% finished. It could change in the future.',
+            recipiesDescription: 'Description: Personal web site. You’ll be able to add, share and save recipes! Features: Responsive web app – mobile first. State: 60% finished but with stables functionalities.',
             visit: 'Visit web site',
         },
         contact:{

@@ -13,26 +13,26 @@ const Work = () => {
             </div>
             <div className="content-section">
                 <div className="justify-content-center row">
-                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                            <img src={PlomeriaBA} class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <p class="card-text">
+                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div className="card">
+                            <img src={PlomeriaBA} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <p className="card-text">
                                     <Text text="plumberDescription" section="work" />
                                 </p>
-                                <a href="https://plomeriaba.web.app/" class="btn btn-primary float-right"><Text text="visit" section="work" /></a>
+                                <a href="https://plomeriaba.web.app/" className="btn btn-primary float-right"><Text text="visit" section="work" /></a>
                             </div>
                         </div>
                     </div>
                     
-                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img src={Recipies} class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <p class="card-text">
+                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                        <div className="card">
+                            <img src={Recipies} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <p className="card-text">
                                     <Text text="recipiesDescription" section="work" />
                                 </p>
-                                <a href="https://recipies-91cf8.web.app/" class="btn btn-primary float-right"><Text text="visit" section="work" /></a>
+                                <a href="https://recipies-91cf8.web.app/" className="btn btn-primary float-right"><Text text="visit" section="work" /></a>
                             </div>
                         </div>
                     </div>
