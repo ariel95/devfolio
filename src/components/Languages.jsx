@@ -4,6 +4,7 @@ import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 import spanish from '../public/icons/spanish.ico'
 import english from '../public/icons/english.ico'
 import { LanguageContext } from '../languages/LanguageContext'
+import Text from './Text'
 
 const Languages = () => {
 
@@ -40,7 +41,7 @@ const Languages = () => {
                     onClick={() => spanishClick()}
                 >
                     <img src={spanish} alt="" />
-                    <span style={{ marginLeft: "15px" }}>Español</span>
+                    <span style={{ marginLeft: "15px" }}><Text text="spanish" section="common" /></span>
                 </button>
                 <button
                     className="dropdown-item"
@@ -48,7 +49,7 @@ const Languages = () => {
                     onClick={() => englishClick()}
                 >
                     <img src={english} alt="" />
-                    <span style={{ marginLeft: "15px" }}>Ingles</span>
+                    <span style={{ marginLeft: "15px" }}><Text text="english" section="common" /></span>
                 </button>
                
             </div>

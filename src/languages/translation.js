@@ -5,16 +5,18 @@ export default {
             about: 'About',
             work: 'Work',
             contact: 'Contact',
-            menu: 'Menu'
+            menu: 'Menu',
+            spanish: 'Spanish',
+            english: 'English'
         },
         banner: {
             fullStackDeveloper: 'Full Stack Developer'
         },
         about: {
             about: 'About me',
-            aboutDescription: "I’ve been working as a Full Stack Developer since December 2017 and I’m studying System Engineering in the UTN (FRBA - Argentina). Currently I’m doing subjects from 3rd and 4th year. I see myself a proactive and curious person. I like team work.",
+            aboutDescription: "I’ve been working as a Full Stack Developer since December 2017 and I’m studying System Engineering in the National University of Tecnology (FRBA - Argentina). Currently I’m doing subjects from 3rd and 4th year. I'm a proactive and curious person. I enjoy teamwork.",
             tecnologiesExperience: 'Tecnologies experience',
-            tecnologiesExperienceDescription: "Working, I’ve been using C# as the main programming language. In Front-End I’ve worked with HTML, Razor, CSS, JavaScript, JQuery and Bootstrap. For databases I’ve used SQL Server. Currently I’m developing web apps (Personal projects and Customers’ projects) using React JS + Redux Ducks in the Front-End and the Firebase’s services. Also I’m going to learn Node JS and Net Core API REST for the Back-End in my next apps." ,
+            tecnologiesExperienceDescription: "I’ve been using C# as a main programming language. In Front-End I’ve worked with HTML, Razor, CSS, JavaScript, JQuery and Bootstrap. For databases I’ve used SQL Server. Currently I’m developing web apps (Personal projects and Customers’ projects) using React JS + Redux Ducks in the Front-End and the Firebase’s services. Also I’m going to learn Node JS and Net Core API REST for the Back-End in my next apps." ,
         },
         work: {
             work: "Work",
@@ -24,7 +26,7 @@ export default {
         },
         contact:{
             contact: "Contact",
-            contactSubtitle: "Make the queries that you think are necessary. We are at your disposal!",
+            contactSubtitle: "For any querys send us an email. We are at your disposal!",
             writeMe: "Send me an Email",
             name: "Name",
             email: "Email",
@@ -41,14 +43,16 @@ export default {
             about: 'Sobre mi',
             work: 'Proyectos',
             contact: 'Contacto',
-            menu: 'Menu'
+            menu: 'Menu',
+            spanish: 'Español',
+            english: 'Inglés'
         },
         banner: {
             fullStackDeveloper: 'Desarrollador Full Stack'
         },
         about: {
             about: 'Sobre mi',
-            aboutDescription: "Soy Desarrollador FullStack .NET desde Diciembre 2017 y estudiante de Ingeniería en Sistemas en la UTN (FRBA), actualmente cursando materias de 3er y 4to año. Me considero una persona proactiva y curiosa. Me gusta el trabajo en equipo.",
+            aboutDescription: "Soy Desarrollador FullStack .NET desde Diciembre 2017 y estudiante de Ingeniería en Sistemas en la UTN (FRBA - Argentina), actualmente cursando materias de 3er y 4to año. Me considero una persona proactiva y curiosa. Disfruto del trabajo en equipo.",
             tecnologiesExperience: 'Experiencias en tecnologías',
             tecnologiesExperienceDescription: 'Durante mi experiencia laboral, he estado utilizando C# como lenguaje principal de programación. En la parte de Front-End he trajado con HTML, Razor, CSS, Javascript, JQuery y Bootstrap. SQL Server para Base de datos. Actualmente estoy desarrollando aplicaciones web (tanto proyectos personales como proyectos a clientes) utilizando React JS + Redux Ducks para el Front-End y las funcionalidades de Firebase para el "Back-End" y el respaldo de datos. También estoy en proceso de aprendizaje tanto de Node JS como Net Core API REST para el Back-End de mis nuevas aplicaciones.' ,
         },
