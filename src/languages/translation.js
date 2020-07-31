@@ -35,6 +35,7 @@ export default {
             send: "Send",
             success: "Thanks for send your message!",
             error: "Ooops! There was an error to send your message.",
+            incomplete: "There are empty fields.",
         }
     },
     spanish: {
@@ -73,6 +74,7 @@ export default {
             send: "Enviar",
             success: "¡Gracias por enviarnos su mensaje!",
             error: "¡Ooops! Hubo un error para enviar su mensaje.",
+            incomplete: "Faltan completar algunos campos.",
         }
 
     }

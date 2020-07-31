@@ -96,3 +96,12 @@ button.btn-icon{
   visibility: hidden; 
   pointer-events: none;
 }
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus
+{
+  background: var(--text-color-banner);
+  border: none;
+  box-shadow: none;
+  outline: none;
+}

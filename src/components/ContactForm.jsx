@@ -5,12 +5,20 @@ import { LanguageContext } from '../languages/LanguageContext'
 
 const ContactForm = (props) => {
 
+    const [name, setName] = React.useState("");
+    const [email, setEmail] = React.useState("");
+    const [msg, setMsg] = React.useState("");
     const [status, setStatus] = React.useState("");
 
     const { transl } = React.useContext(LanguageContext)
 
     function submitForm(ev) {
         ev.preventDefault();
+
+        if(name.trim() === "" || email.trim() === "" || msg.trim() === "") {
+            setStatus("INCOMPLETE"); 
+            return;
+        }
         const form = ev.target;
         const data = new FormData(form);
         const xhr = new XMLHttpRequest();
@@ -38,15 +46,15 @@ const ContactForm = (props) => {
             >
                 <div className="form-group">
                     {/* <label htmlFor="form-name">Nombre</label> */}
-                    <input placeholder={transl["contact"]["name"]} type="text" name="name" className="form-control" id="form-name" />
+                    <input placeholder={transl["contact"]["name"]} type="text" name="name" className="form-control" id="form-name" onChange={(e) => setName(e.target.value)}/>
                 </div>
                 <div className="form-group">
                     {/* <label placeholder="Nombre"  htmlFor="form-email">Email</label> */}
-                    <input placeholder={transl["contact"]["email"]}  type="text" name="email" className="form-control" id="form-email" aria-describedby="emailHelp" />
+                    <input placeholder={transl["contact"]["email"]}  type="text" name="email" className="form-control" id="form-email" aria-describedby="emailHelp"  onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div className="form-group">
                     {/* <label htmlFor="form-message">Mensaje</label> */}
-                    <textarea type="text" name="message" className="form-control" id="form-message" placeholder={transl["contact"]["message"]}>
+                    <textarea type="text" name="message" className="form-control" id="form-message" placeholder={transl["contact"]["message"]}  onChange={(e) => setMsg(e.target.value)}>
 
                     </textarea>
                 </div>
@@ -65,6 +73,7 @@ const ContactForm = (props) => {
                 }
                 {status === "SUCCESS" && <p><Text text="success" section="contact"/></p>}
                 {status === "ERROR" && <p><Text text="error" section="contact"/></p>}
+                {status === "INCOMPLETE" && <p><Text text="incomplete" section="contact"/></p>}
                 </form>
         </section>
     )

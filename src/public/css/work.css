@@ -6,9 +6,20 @@
     height: 100%;
     
 }
+
 #work-content .card img{
     min-height: 200px;
+    transition: all 1s ease-in-out;
 }
+
+#work-content .card img:hover{
+    transform: scale(1.1);
+}
+
+#work-content .card .img-content {
+    overflow: hidden;
+}
+
 
 #work-content .card a.btn {
     border: none;
