@@ -3,8 +3,13 @@ import '../public/css/work.css'
 import Text from './Text'
 import PlomeriaBA from '../public/img/plomeriaba.png'
 import Recipies from '../public/img/recipies.png'
+import ReactHtmlParser from 'react-html-parser'
+import { LanguageContext } from '../languages/LanguageContext'
 
 const Work = () => {
+
+    const { transl } = React.useContext(LanguageContext)
+
     return (
         <section id="work-content">
             <span id="work" className="position"></span>
@@ -19,10 +24,11 @@ const Work = () => {
                                 <img src={PlomeriaBA} className="card-img-top" alt="..." />
                             </div>
                             <div className="card-body">
-                                <p className="card-text">
-                                    <Text text="plumberDescription" section="work" />
-                                </p>
-                                <a href="https://plomeriaba.web.app/" target="_blank" className="btn btn-primary float-right"><Text text="visit" section="work" /></a>
+                                <div className="card-text">
+                                    {ReactHtmlParser (transl["work"]["plumberDescription"]) }
+                                    {/* <Text text="plumberDescription" section="work" /> */}
+                                </div>
+                                <a href="https://plomeriaba.web.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary float-right"><Text text="visit" section="work" /></a>
                             </div>
                         </div>
                     </div>
@@ -33,10 +39,11 @@ const Work = () => {
                                 <img src={Recipies} className="card-img-top" alt="..." />
                             </div>
                             <div className="card-body">
-                                <p className="card-text">
-                                    <Text text="recipiesDescription" section="work" />
-                                </p>
-                                <a href="https://recipies-91cf8.web.app/" target="_blank" className="btn btn-primary float-right"><Text text="visit" section="work" /></a>
+                                <div className="card-text">
+                                    {ReactHtmlParser (transl["work"]["recipiesDescription"]) }
+                                    {/* <Text text="recipiesDescription" section="work" /> */}
+                                </div>
+                                <a href="https://recipies-91cf8.web.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary float-right"><Text text="visit" section="work" /></a>
                             </div>
                         </div>
                     </div>

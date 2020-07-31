@@ -3,7 +3,7 @@ import '../public/css/sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Text from './Text'
-import Languages from './Languages'
+// import Languages from './Languages'
 
 const Sidebar = (props) => {
 
@@ -22,7 +22,6 @@ const Sidebar = (props) => {
                 <a href="#about" className="list-group-item list-group-item-action bg-light"><Text text="about" section="common"/></a>
                 <a href="#work" className="list-group-item list-group-item-action bg-light"><Text text="work" section="common"/></a>
                 <a href="#contact" className="list-group-item list-group-item-action bg-light"><Text text="contact" section="common"/></a>
-                
             </div>
         </div>
     )

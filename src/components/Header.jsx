@@ -71,7 +71,7 @@ const Header = (props) => {
 
     React.useEffect(() => {
         window.onscroll = () => handleAnimation();
-    }, [])
+    }, [handleAnimation])
 
     return (
         <nav id="header" className={isSolid ? "navbar navbar-expand-md fixed-top solid" : "navbar navbar-expand-md fixed-top"} >

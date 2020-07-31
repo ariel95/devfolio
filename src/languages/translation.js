@@ -20,8 +20,8 @@ export default {
         },
         work: {
             work: "Work",
-            plumberDescription: 'Description: Web site made for a plumbing and general services company. Features: Responsive web app - desktop first. State: 80% finished. It could change in the future.',
-            recipiesDescription: 'Description: Personal web site. You’ll be able to add, share and save recipes! Features: Responsive web app – mobile first. State: 60% finished but with stables functionalities.',
+            plumberDescription: '<h5>Plomería Bautista Ángel</h5><br />Description: Web site made for a plumbing and general services company. <br /> Features: Responsive web app - desktop first.<br /> State: 80% finished. It could change in the future.  <br /> <a href="https://github.com/ariel95/pba" target="_blank">Github</a>',
+            recipiesDescription: '<h5>Recipes</h5><br />Description: Personal web site. You’ll be able to add, share and save recipes! <br /> Features: Responsive web app – mobile first.<br /> State: 60% finished but with stables functionalities.  <br /> <a href="https://github.com/ariel95/recipies" target="_blank">Github</a>',
             visit: 'Visit web site',
         },
         contact:{
@@ -59,8 +59,8 @@ export default {
         },
         work: {
             work: "Proyectos",
-            plumberDescription: 'Descripción: Sitio web para una empresa de plomerias y servicios generales.  Caracteristicas: Aplicación responsive, apuntando a Desktop.  Estado: 80% para finalizarlo. Con posibles cambios a futuro.',
-            recipiesDescription: 'Aplicación web personal. Podrás compartir y guardar recetas de comidas! Caracteristicas: Aplicación responsive, apuntando a Mobile. Estado: 60% para finalizarlo pero con funcionalidades estables.',
+            plumberDescription: '<h5>Plomería Bautista Ángel</h5><br />Descripción: Sitio web para una empresa de plomerias y servicios generales. <br /> Caracteristicas: Aplicación responsive, apuntando a Desktop. <br /> Estado: 80% para finalizarlo. Con posibles cambios a futuro. <br /> <a href="https://github.com/ariel95/pba" target="_blank">Github</a>',
+            recipiesDescription: '<h5>Recipes</h5><br />Aplicación web personal. Podrás compartir y guardar recetas de comidas!<br /> Caracteristicas: Aplicación responsive, apuntando a Mobile. <br /> Estado: 60% para finalizarlo pero con funcionalidades estables. <br /> <a href="https://github.com/ariel95/recipies" target="_blank">Github</a>',
             visit: 'Visitar sitio web',
         },
         contact:{
