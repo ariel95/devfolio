@@ -14,19 +14,19 @@ export default {
         },
         about: {
             about: 'About me',
-            aboutDescription: "I’ve been working as a Full Stack Developer since December 2017 and I’m studying System Engineering in the National University of Tecnology (FRBA - Argentina). Currently I’m doing subjects from 3rd and 4th year. I'm a proactive and curious person. I enjoy teamwork.",
+            aboutDescription: "I have been working as a Full Stack Developer since December 2017 and I am studying System Engineering in the National University of Tecnology (FRBA - Argentina). Currently I’m doing subjects from 3rd and 4th year. I am a proactive and curious person. I enjoy teamwork.",
             tecnologiesExperience: 'Tecnologies experience',
-            tecnologiesExperienceDescription: "I’ve been using C# as a main programming language. In Front-End I’ve worked with HTML, Razor, CSS, JavaScript, JQuery and Bootstrap. For databases I’ve used SQL Server. Currently I’m developing web apps (Personal projects and Customers’ projects) using React JS + Redux Ducks in the Front-End and the Firebase’s services. Also I’m going to learn Node JS and Net Core API REST for the Back-End in my next apps." ,
+            tecnologiesExperienceDescription: "I have been using C# as a main programming language. In Front-End I have worked with HTML, Razor, CSS, JavaScript, JQuery and Bootstrap. For databases I’ve used SQL Server. Currently I am developing web apps (Personal projects and Customers’ projects) using React JS + Redux Ducks in the Front-End and the Firebase’s services. Also I am going to learn Node JS and Net Core API REST for the Back-End in my next apps." ,
         },
         work: {
             work: "Work",
             plumberDescription: '<h5>Plomería Bautista Ángel</h5><br />Description: Web site made for a plumbing and general services company. <br /> Features: Responsive web app - desktop first.<br /> State: 80% finished. It could change in the future.  <br /> <a href="https://github.com/ariel95/pba" target="_blank">Github</a>',
-            recipiesDescription: '<h5>Recipes</h5><br />Description: Personal web site. You’ll be able to add, share and save recipes! <br /> Features: Responsive web app – mobile first.<br /> State: 60% finished but with stables functionalities.  <br /> <a href="https://github.com/ariel95/recipies" target="_blank">Github</a>',
+            recipiesDescription: '<h5>Recipes</h5><br />Description: Personal web site. You’ll be able to add, share and save recipes! <br /> Features: Responsive web app – mobile first.<br /> State: 60% finished but with stable functionalities.  <br /> <a href="https://github.com/ariel95/recipies" target="_blank">Github</a>',
             visit: 'Visit web site',
         },
         contact:{
             contact: "Contact",
-            contactSubtitle: "For any querys send us an email. We are at your disposal!",
+            contactSubtitle: "For any queries send us an email. We are at your disposal!",
             writeMe: "Send me an Email",
             name: "Name",
             email: "Email",
